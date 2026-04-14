@@ -16,3 +16,10 @@ logs/
 .idea/
 *.swp
 .DS_Store
+
+# Docker
+.docker/
+*.dockerfile
+
+# Docker Compose
+docker-compose.override.yml
