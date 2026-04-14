@@ -21,3 +21,25 @@ Telegram-бот для отслеживания резких изменений 
    ```bash
    git clone https://github.com/ВАШ_НИК/crypto-signal-bot.git
    cd crypto-signal-bot
+
+## 🐳 Запуск через Docker (рекомендуется)
+
+### Требования
+- Установленный [Docker](https://docs.docker.com/get-docker/)
+- Установленный [Docker Compose](https://docs.docker.com/compose/install/) (опционально)
+
+### Быстрый старт
+```bash
+# 1. Клонируйте репозиторий
+git clone https://github.com/bochito-bochito/crypto-signal-bot.git
+cd crypto-signal-bot
+
+# 2. Настройте переменные окружения
+cp .env.example .env
+# Откройте .env и вставьте TELEGRAM_BOT_TOKEN и AUTHORIZED_USERS
+
+# 3. Запустите через Docker Compose
+docker-compose up -d
+
+# 4. Просмотр логов
+docker-compose logs -f
